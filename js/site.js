@@ -24,3 +24,18 @@ $(function(){
             }
     });
 });
+
+// About page
+
+function initMap() {
+	var wsw = {lat: -36.853507, lng: 174.766542};
+	var map = new google.maps.Map(document.getElementById("googleMap"), {
+		center: wsw,
+		zoom: 15
+	});
+	var marker = new google.maps.Marker({
+	position: wsw,
+	map: map,
+	animation: google.maps.Animation.DROP
+	});
+}

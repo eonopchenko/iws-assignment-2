@@ -3,3 +3,14 @@
 #featured-wines div{
 	display: inline;
 }
+
+/*About page*/
+
+.heading{
+	color: #666666;
+}
+
+.paragraph{
+	color: #808080;
+	text-align: justify;
+}

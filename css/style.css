@@ -1,5 +1,415 @@
 @charset "utf-8";
 /* CSS Document */
+{
+	padding:0;
+	margin:0;
+	border:0;
+}
+
+html, body
+{
+	height:100%;
+}
+
+ul
+{
+	list-style:none;
+}
+body
+{
+	background-color: #e6e6e6;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: "Montserrat", helvetica, arial, sans-serif;
+	color: #444;
+}
+
+h1, h2
+{
+	margin-bottom:15px;
+}
+
+h3, h4, h5
+{
+	margin-bottom:10px;
+	color: #211f20;
+}
+
+h1, h2, h3, h4, h5
+{
+	font-family: Gill Sans, Verdana;
+	margin-top:0px !important;
+}
+
+a
+{
+	color: #444;
+	text-decoration:none;
+}
+
+a:hover
+{
+	text-decoration:underline;
+}
+
+.wrapper
+{
+	width:80%;
+	margin:auto;
+	background-color:white;
+	max-width:985px;
+	position:absolute;
+	bottom:0px;
+	top:0px;
+	left:0px;
+	right:0px;
+}
+
+.main-wrapper
+{
+	display:table;
+	/* 100% - header & footer height */
+	height:calc(100% - 111px);
+	width:100%;
+	margin-top:70px;
+}
+
+.header
+{
+	background-color: rgba(255,255,255,1);
+	height: 70px;
+	position:fixed;
+	z-index:50;
+	left:0;
+	width:100%;
+}
+
+.header-wrapper
+{
+	/*background-color: rgba(255,255,255,1);*/
+	margin-bottom: 0px;
+	
+	background-image: url('images/topPart.jpg');
+	background-repeat: no-repeat;
+	background-image: cover;
+	background-position: left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height:100%;
+	left:0px;
+	right:0px;
+}
+
+.inline-block
+{
+	display:inline-block;
+}
+
+.sidebar
+{
+	width:200px;
+	
+	position:fixed;
+	top: 0px;
+	margin-top: 0px;
+}
+
+.sidebar .nav
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	right:0px;
+}
+.content-wrapper
+{
+	/* 100% - sizebar width */
+	width:calc(100% - 200px);
+	margin-left: 200px;
+	margin-top: 0px;
+}
+
+.content-wrapper
+{
+	padding: 0px 15px 15px 15px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.footer
+{
+	height:40px;
+	border-top:1px solid lightgray;
+}
+
+.footer ul
+{
+	width:50%;
+}
+
+.footer ul li
+{
+	display:inline-block;
+	margin-left:20px;
+	font-weight:600;
+}
+
+.footer ul li a, .footer p
+{
+	line-height:40px;
+	vertical-align:middle;
+}
+
+.footer ul, .footer p
+{
+	display:inline-block;
+}
+
+.footer p
+{
+	margin-right:20px;
+}
+
+.middle
+{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.button
+{
+	width:50px;
+	height:20px;
+	border:1px solid gray;
+	border-radius:4px;
+	text-align:center;
+	padding:3px;
+	background-color:lightgray;
+}
+
+.button:hover
+{
+	background-color:white;
+	color:gray;
+	cursor:pointer;
+}
+
+.categories-wrapper
+{
+	position:relative;
+	float:right;
+}
+
+.categories
+{
+	width:100px;
+	position:absolute;
+	display:none;
+	background-color:white;
+	right:0px;
+	color:black;
+}
+
+.categories li
+{
+	padding:5px;
+	text-align:center;
+	cursor:pointer;
+	background-color:lightgray;
+}
+
+.categories li:hover
+{
+	background-color:white;
+}
+
+.categories-wrapper ul
+{
+	list-style:none;
+	padding:10px;
+}
+
+.cart-icon
+{
+	color:#4CAF50;
+	cursor:pointer;
+}
+
+.cart-icon:hover:before
+{
+	content: "\f00d";
+	color:#f44336;
+}
+
+
+.cart
+{
+	width:220px;
+}
+
+.clear
+{
+	clear:both;
+}
+
+.infobox
+{
+	padding:10px;
+		
+}
+
+.lightbox:hover
+{
+	cursor:pointer;
+}
+
+
+.lightbox img
+{
+	margin-bottom:5px;
+	height: 500px;
+}
+#featured-vines div{
+	align-content: center;
+}
+
+.lightbox img, .infobox
+{
+	width: 200px;
+	padding: 20px;
+	display:inline-block;	
+}
+
+.lightbox h5
+{
+	height:90px;
+	padding-left: 50px;
+}
+
+.lightbox-more /* Content*/
+{
+	display:none;
+	position:fixed;
+	left:25%;
+	right:25%;
+	top:20%;
+	bottom:20%;
+	background-color:white;
+	z-index: 100;
+	text-align: left;
+	border-radius: 5px;
+	border: 2px solid #221f20;
+}
+
+/* Products page lightbox inner */ 
+.lightbox-more div
+{
+	float: left;
+	width: 48%; /* Half the size of the parent!*/
+	padding: 5px;
+	text-align: left;
+	padding-left: 100px
+}
+
+/* Products page lightbox image*/
+.lightbox-more div img
+{
+	width: 200px;
+	height: 374px;
+}
+
+.lightbox-more:hover
+{
+	cursor:text;
+}
+
+.lightbox-lightbox
+{
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	background-color:black;
+	opacity:0.6;
+	width:100%;
+	height:100%;
+	display:none;
+	z-index: 60;
+}
+
+.lightbox-lightbox:hover
+{
+	cursor:pointer;
+}
+
+.lightbox-imageonly
+{
+	position:fixed;
+	z-index:120;
+	top:0;
+}
+
+.message
+{
+	background-color:white;
+	
+	border-radius:4px;
+	color:#221f20;
+	padding:5px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom:35px;
+}
+
+.message-alert
+{
+	background-color:red;
+}
+
+.section
+{
+	
+}
+.nav ul
+{
+	list-style:none;
+}
+
+.nav ul li a
+{
+	display:block;
+	width:100%;
+	padding:20px 0;
+	text-decoration:none;
+	text-align:center;
+	color:#2B2B2B;
+	text-transform:uppercase;
+	
+	font: Tahoma;
+	font-size: 18px;
+	letter-spacing: 2px;
+	
+    -webkit-transition: 0.2s ease-in;
+       -moz-transition: 0.2s ease-in;
+        -ms-transition: 0.2s ease-in;
+         -o-transition: 0.2s ease-in;
+            transition: 0.2s ease-in;
+	
+}
+
+.nav a:hover, .nav-selected
+{
+	background-color:#221F20;
+	color:white !important;
+	text-decoration: none !important;
+}
+
 #featured-wines div{
 	display: inline;
 }

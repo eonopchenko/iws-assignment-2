@@ -1,0 +1,39 @@
+/*Navbar*/
+.navbar{
+	height: 130px;
+	border-bottom: 2px;
+	border-bottom-color: #666666;
+	border-style: solid;
+}
+
+.navbar-brand{
+	padding-top: 50px;
+}
+
+/*Logo*/
+
+.logo{
+	font-family: 'Great Vibes', cursive;
+	color: black;
+	font-size: 60px;
+	margin-bottom: 15px;
+}
+.logoText{
+	font-family: 'Playfair Display SC', serif;
+	text-align: center;
+}
+
+/*About page*/
+
+.heading{
+	color: #666666;
+}
+
+.paragraph{
+	color: #808080;
+	text-align: justify;
+}
+
+.glyphicon{
+	color: #ff0000;
+}

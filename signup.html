@@ -5,34 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/master.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
     <title>Signup</title>
   </head>
-  <body class="background">
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">Wall Street Wines</a>
+  <body>
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+              <p class="logo">WSW</p>
+              <p class="logoText">WALLSTREETWINES</p>
+            </a>
+
+          </div>
+          <div class="collapse navbar-collapse" id="#defaultNavbar1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="signup.html">Signup</a></li>
+              <li class="active"><a href="about.html">About</a></li>
+              <li><a href="#" onClick="displayCart()">Shopping Cart</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="collapse navbar-collapse" id="#defaultNavbar1">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li class="active"><a href="signup.html">Signup</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#" onClick="displayCart()">Shopping Cart</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
     <div class="warning"><h1>Signup Page</h1></div>
+    <footer>
+
+    </footer>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/master.js"></script>
   </body>
 </html>

@@ -1,5 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
+*
 {
 	padding:0;
 	margin:0;
@@ -53,9 +54,37 @@ a:hover
 	text-decoration:underline;
 }
 
+ul li
+{
+	
+}
+
+form input[type=text]
+{
+	border:1px solid lightgray;
+	background-color:#e6e6e6;
+	min-width:150px;
+	padding:5px;
+}
+
+table tr td
+{
+	font-weight:bold;
+	font-size:14px;
+	padding:0 5px;
+	min-width:20px;
+}
+
+table
+{
+	
+}
+
 .wrapper
 {
 	width:80%;
+	/* 100% - margin / 2*/
+	/*height:calc(100% - 60px);*/
 	margin:auto;
 	background-color:white;
 	max-width:985px;
@@ -110,6 +139,7 @@ a:hover
 .sidebar
 {
 	width:200px;
+	/*background-color:#f2f2f2;*/
 	
 	position:fixed;
 	top: 0px;
@@ -123,6 +153,12 @@ a:hover
 	left:0px;
 	right:0px;
 }
+/*
+.content-wrapper, .sidebar
+{
+	display:table-cell;
+}
+*/
 .content-wrapper
 {
 	/* 100% - sizebar width */
@@ -206,7 +242,7 @@ a:hover
 
 .categories
 {
-	width:100px;
+	width:200px;
 	position:absolute;
 	display:none;
 	background-color:white;
@@ -232,7 +268,6 @@ a:hover
 	list-style:none;
 	padding:10px;
 }
-
 .cart-icon
 {
 	color:#4CAF50;
@@ -256,10 +291,60 @@ a:hover
 	clear:both;
 }
 
+.welcome
+{
+	height:100%;
+}
+
+.welcome h1
+{
+	text-align:center;
+	display:block;
+	float:left;
+	color:white;
+}
+
+.welcome, .search
+{
+	display:inline-block;
+}
+
+.welcome h1
+{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.search
+{
+	
+}
+
+.search input
+{
+	width:200px;
+	padding:7px;
+	font-family:Arial;
+	border:1px solid gray;
+	border-radius:3px;
+}
+
+.search input:hover
+{
+	border:1px solid blue;
+}
+
+.lightbox
+{
+	padding:0px;
+	float:left;
+}
+
 .infobox
 {
-	padding:10px;
-		
+	padding:20px;
+	float:left;
 }
 
 .lightbox:hover
@@ -267,27 +352,20 @@ a:hover
 	cursor:pointer;
 }
 
-
 .lightbox img
 {
+	
 	margin-bottom:5px;
-	height: 500px;
-}
-#featured-vines div{
-	align-content: center;
 }
 
 .lightbox img, .infobox
 {
-	width: 200px;
-	padding: 20px;
-	display:inline-block;	
+	width:120px;
 }
 
 .lightbox h5
 {
-	height:90px;
-	padding-left: 50px;
+	height:60px;
 }
 
 .lightbox-more /* Content*/
@@ -312,7 +390,6 @@ a:hover
 	width: 48%; /* Half the size of the parent!*/
 	padding: 5px;
 	text-align: left;
-	padding-left: 100px
 }
 
 /* Products page lightbox image*/
@@ -372,10 +449,18 @@ a:hover
 	background-color:red;
 }
 
-.section
+.futured-wines .lightbox
 {
-	
+	padding:10px;
 }
+
+.right
+{
+	float:right;
+}
+
+
+/* Nav CSS */
 .nav ul
 {
 	list-style:none;
@@ -405,14 +490,52 @@ a:hover
 
 .nav a:hover, .nav-selected
 {
+
 	background-color:#221F20;
 	color:white !important;
 	text-decoration: none !important;
 }
 
-#featured-wines div{
-	display: inline;
+/*Navbar*/
+.navbar{
+	height: 130px;
+	border-bottom: 2px;
+	border-bottom-color: #666666;
+	border-style: solid;
 }
+
+.navbar-brand{
+	padding-top: 50px;
+}
+
+/*Logo*/
+
+.logo{
+	font-family: 'Great Vibes', cursive;
+	color: black;
+	font-size: 60px;
+	margin-bottom: 15px;
+}
+.logoText{
+	font-family: 'Playfair Display SC', serif;
+	text-align: center;
+}
+
+/*About page*/
+
+.heading{
+	color: #666666;
+}
+
+.paragraph{
+	color: #808080;
+	text-align: justify;
+}
+
+.glyphicon{
+	color: #ff0000;
+}
+
 /*Navbar*/
 .navbar{
 	height: 130px;

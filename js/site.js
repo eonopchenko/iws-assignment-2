@@ -1,7 +1,7 @@
 // JavaScript Document
 //Home and product page 
 function init() {
-	$.getJSON( "Labrary/catalog.json", function( data ) {
+	$.getJSON( "./catalog.json", function( data ) {
 	var items = [];
 	var categories = [];
 	$.each( data.wines, function( i, wine ) {
@@ -43,7 +43,7 @@ function generateProductDiv(wine)
 
 function getwine(id)
 {
-	$.getJSON( "Labrary/catalog.json", function( data ) {
+	$.getJSON( "./catalog.json", function( data ) {
 		$.each( data.wines, function( i, wine ) 
 		{
 			if(id == wine['id'])
@@ -66,7 +66,7 @@ function initDeal()
 {
 
 $(".deal")[0].innerHTML = "";
-$.getJSON( "Labrary/catalog.json", function( data ) {
+$.getJSON( "./catalog.json", function( data ) {
 	$.each( data.deal, function(i, wine)
 	{
 		//$(".deal")[0].innerHTML += "<div class='lightbox'><img src='images/wines/" + wine['id'] + ".jpg'></img></div>";
@@ -79,7 +79,7 @@ $.getJSON( "Labrary/catalog.json", function( data ) {
 function initPopular()
 {
 	$(".popular")[0].innerHTML = "";
-	$.getJSON( "Labrary/catalog.json", function( data ) {
+	$.getJSON( "./catalog.json", function( data ) {
 		$.each( data.popular, function(i, wine)
 		{
 			var wineObj = data.wines[wine['id']];

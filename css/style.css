@@ -153,15 +153,14 @@ table
 	left:0px;
 	right:0px;
 }
-/*
-.content-wrapper, .sidebar
-{
-	display:table-cell;
+.dealM {
 }
-*/
+#featured-wines{
+	padding-bottom: 550px;
+}
+
 .content-wrapper
 {
-	/* 100% - sizebar width */
 	width:calc(100% - 200px);
 	margin-left: 200px;
 	margin-top: 0px;
@@ -334,11 +333,17 @@ table
 {
 	border:1px solid blue;
 }
+.container #featured-wines, .dealM {
+	padding-left: 200px
+}
+.caret{
+	
+}
 
 .lightbox
 {
-	padding:0px;
-	float:left;
+	padding:120px;
+	float:right;
 }
 
 .infobox
@@ -361,11 +366,13 @@ table
 .lightbox img, .infobox
 {
 	width:120px;
+	padding-left: 20px;
+	
 }
 
 .lightbox h5
 {
-	height:60px;
+	height:80px;
 }
 
 .lightbox-more /* Content*/
@@ -396,7 +403,7 @@ table
 .lightbox-more div img
 {
 	width: 200px;
-	height: 374px;
+	height:574px;
 }
 
 .lightbox-more:hover

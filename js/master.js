@@ -1,3 +1,13 @@
+// Navbar
+
+function addMenuDown(tabName){
+	document.getElementById(tabName.id).innerHTML = tabName.id + '<br><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>';
+}
+
+function hideMenuDown(tabName){
+	document.getElementById(tabName.id).innerHTML = tabName.id;
+}
+
 // About Page
 
 function initMap() {

@@ -56,7 +56,7 @@ a:hover
 
 ul li
 {
-	
+
 }
 
 form input[type=text]
@@ -77,7 +77,7 @@ table tr td
 
 table
 {
-	
+
 }
 
 .wrapper
@@ -118,7 +118,7 @@ table
 {
 	/*background-color: rgba(255,255,255,1);*/
 	margin-bottom: 0px;
-	
+
 	background-image: url('images/topPart.jpg');
 	background-repeat: no-repeat;
 	background-image: cover;
@@ -140,7 +140,7 @@ table
 {
 	width:200px;
 	/*background-color:#f2f2f2;*/
-	
+
 	position:fixed;
 	top: 0px;
 	margin-top: 0px;
@@ -317,7 +317,7 @@ table
 
 .search
 {
-	
+
 }
 
 .search input
@@ -337,7 +337,7 @@ table
 	padding-left: 200px
 }
 .caret{
-	
+
 }
 
 .lightbox
@@ -359,7 +359,7 @@ table
 
 .lightbox img
 {
-	
+
 	margin-bottom:5px;
 }
 
@@ -367,7 +367,7 @@ table
 {
 	width:120px;
 	padding-left: 20px;
-	
+
 }
 
 .lightbox h5
@@ -390,7 +390,7 @@ table
 	border: 2px solid #221f20;
 }
 
-/* Products page lightbox inner */ 
+/* Products page lightbox inner */
 .lightbox-more div
 {
 	float: left;
@@ -441,7 +441,7 @@ table
 .message
 {
 	background-color:white;
-	
+
 	border-radius:4px;
 	color:#221f20;
 	padding:5px;
@@ -482,17 +482,17 @@ table
 	text-align:center;
 	color:#2B2B2B;
 	text-transform:uppercase;
-	
+
 	font: Tahoma;
 	font-size: 18px;
 	letter-spacing: 2px;
-	
+
     -webkit-transition: 0.2s ease-in;
        -moz-transition: 0.2s ease-in;
         -ms-transition: 0.2s ease-in;
          -o-transition: 0.2s ease-in;
             transition: 0.2s ease-in;
-	
+
 }
 
 .nav a:hover, .nav-selected
@@ -501,84 +501,4 @@ table
 	background-color:#221F20;
 	color:white !important;
 	text-decoration: none !important;
-}
-
-/*Navbar*/
-.navbar{
-	height: 130px;
-	border-bottom: 2px;
-	border-bottom-color: #666666;
-	border-style: solid;
-}
-
-.navbar-brand{
-	padding-top: 50px;
-}
-
-/*Logo*/
-
-.logo{
-	font-family: 'Great Vibes', cursive;
-	color: black;
-	font-size: 60px;
-	margin-bottom: 15px;
-}
-.logoText{
-	font-family: 'Playfair Display SC', serif;
-	text-align: center;
-}
-
-/*About page*/
-
-.heading{
-	color: #666666;
-}
-
-.paragraph{
-	color: #808080;
-	text-align: justify;
-}
-
-.glyphicon{
-	color: #ff0000;
-}
-
-/*Navbar*/
-.navbar{
-	height: 130px;
-	border-bottom: 2px;
-	border-bottom-color: #666666;
-	border-style: solid;
-}
-
-.navbar-brand{
-	padding-top: 50px;
-}
-
-/*Logo*/
-
-.logo{
-	font-family: 'Great Vibes', cursive;
-	color: black;
-	font-size: 60px;
-	margin-bottom: 15px;
-}
-.logoText{
-	font-family: 'Playfair Display SC', serif;
-	text-align: center;
-}
-
-/*About page*/
-
-.heading{
-	color: #666666;
-}
-
-.paragraph{
-	color: #808080;
-	text-align: justify;
-}
-
-.glyphicon{
-	color: #ff0000;
 }

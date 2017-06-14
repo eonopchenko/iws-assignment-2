@@ -1,6 +1,6 @@
 /*Navbar*/
 .navbar{
-	height: 130px;
+  background-color: #FFFFFF;
 	border-bottom: 2px;
 	border-bottom-color: #666666;
 	border-bottom-style: solid;
@@ -8,29 +8,32 @@
 
 .navbar-brand{
 	padding-top: 50px;
+	margin-bottom: 60px;
 }
 
 .nav{
   padding-top: 35px;
+	text-align: center;
 }
 
 /*Logo*/
 
 .logoHeader{
 	font-family: 'Great Vibes', cursive;
-	color: #000000;
+	color: #A88F53;
 	font-size: 60px;
 	margin-bottom: 15px;
 }
 .logoText{
 	font-family: 'Playfair Display SC', serif;
 	text-align: center;
+	color: #A88F53;
 }
 
 /*Footer*/
 
 footer{
-  background-color: #F8F8F8;
+  background-color: #251E15;
   height: 100px;
   border-top: 2px;
   border-top-color: #666666;
@@ -41,7 +44,7 @@ footer{
 .logoFooter{
   text-align: center;
 	font-family: 'Playfair Display SC', serif;
-	color: #666666;
+	color: #A88F53;
 	font-size: 30px;
 	padding-top: 20px;
 }
@@ -55,10 +58,6 @@ footer{
 .paragraph{
 	color: #808080;
 	text-align: justify;
-}
-
-.glyphicon{
-	color: #ff0000;
 }
 
 hr {

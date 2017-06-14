@@ -26,9 +26,23 @@
             <li><a href="products.html">Products</a></li>
             <li><a href="signup.html">Signup</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="#" onClick="displayCart()">Shopping Cart</a></li>
           </ul>
         </div>
+        <div class="right middle">
+					<div class="right">
+						<div class="dropdown">
+						  <button class="btn btn-danger dropdown-toggle cart-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							Cart
+							<span class="badge">0</span>
+						  </button>
+						  <div class="dropdown-menu dropdown-menu-right cart" aria-labelledby="dropdownMenu1">
+							<table cellspacing="10">
+								<tr>The Cart is Empty</tr>
+							</table>
+						  </div>
+						</div>
+					</div>
+				</div>
       </div>
     </nav>
 	<div class="container well">
@@ -56,5 +70,6 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/site.js"></script>
+    <script src="js/cart.js"></script>
   </body>
 </html>

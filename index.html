@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/master.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
     <title>Home</title>
   </head>
   <body class="background" onLoad="initPopular();initDeal();">
-    <nav class="navbar navbar-default">
+    <!-- <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1">
@@ -44,7 +49,54 @@
 					</div>
 				</div>
       </div>
-    </nav>
+    </nav> -->
+    <header>
+      <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+              <p class="logoHeader">WSW</p>
+              <p class="logoText">WALLSTREETWINES</p>
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+            <div class="textNavbar">
+              <p>
+                <img src="images/wineIconLeft.png" alt="wine">
+                   The Product of David Smith's and Jamie Dacey's Idea Since 1860
+                <img src="images/wineIconRight.png" alt="wine">
+              </p>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="index.html">Home<br><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+              <li><a href="products.html" onmouseover="addMenuDown(this)" onmouseout="hideMenuDown()">Products<br></a></li>
+              <li><a href="signup.html" onmouseover="addMenuDown(this)" onmouseout="hideMenuDown()">Signup<br></a></li>
+              <li><a href="about.html" onmouseover="addMenuDown(this)" onmouseout="hideMenuDown()">About Us<br></a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle cart-button" role="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                  <span class="badge">0</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right cart" aria-labelledby="dropdownMenu1">
+                  <table cellspacing="10">
+                    <tr>The Cart is Empty</tr>
+                   </table>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div>
+      <img class="img-responsive" src="images/large/large1.jpg" alt="largeImage">
+    </div>
 	<div class="container well">
      <h2>Welcome to Wall street wines</h2>
      <p>Our shop opened in June 1860 and provie huge assortiments of populiar and premiums wines. Within our store, you will find a superb selection of wines, an expertly selected range that we are very proud of. We like to think of them as our Family of Wines. On our website you’ll find this same collection available for delivery or for you to collect instore.</p>
@@ -56,7 +108,7 @@
     <div id="featured-wines">
       <div class="popular">
 	  </div>
-    <br> 
+    <br>
 	  <div class="s"></div>
 	  </div>
   	<div class="well">
@@ -67,9 +119,13 @@
 						</div>
 	  </div>
 	  </div>
+    <footer>
+      <p class="logoFooter">WALLSTREETWINES</p>
+    </footer>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/site.js"></script>
     <script src="js/cart.js"></script>
+    <script src="js/master.js"></script>
   </body>
 </html>

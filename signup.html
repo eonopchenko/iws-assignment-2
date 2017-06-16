@@ -8,14 +8,16 @@
     <link href="css/master.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
     <title>Signup</title>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-default">
+      <nav class="navbar navbar-default navbar-static-top">
         <div class="container">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -26,18 +28,38 @@
               <p class="logoText">WALLSTREETWINES</p>
             </a>
           </div>
-          <div class="collapse navbar-collapse" id="#defaultNavbar1">
+          <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+            <div class="textNavbar">
+              <p>
+                <img src="images/wineIconLeft.png" alt="wine">
+                   The Product of David Smith's and Jamie Dacey's Idea Since 1860
+                <img src="images/wineIconRight.png" alt="wine">
+              </p>
+            </div>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="products.html">Products</a></li>
-              <li class="active"><a href="signup.html">Signup</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="#" onClick="displayCart()">Shopping Cart</a></li>
+              <li><a href="index.html" onmouseover="addMenuDown(this)" onmouseout="hideMenuDown()">Home<br></a></li>
+              <li><a href="products.html" onmouseover="addMenuDown(this)" onmouseout="hideMenuDown()">Products<br></a></li>
+              <li class="active"><a href="signup.html">Signup<br><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+              <li><a href="about.html" onmouseover="addMenuDown(this)" onmouseout="hideMenuDown()">About Us<br></a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle cart-button" role="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+              		<span class="badge">0</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right cart" aria-labelledby="dropdownMenu1">
+              	  <table cellspacing="10">
+                    <tr>The Cart is Empty</tr>
+              	   </table>
+              	</div>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
+    <div>
+      <img class="img-responsive" src="images/large/large3.jpg" alt="largeImage">
+    </div>
     <div class="container">
       <hr>
       <h3 class="heading" align="center">Membership Signup</h3>

@@ -1,14 +1,13 @@
 /*Navbar*/
 .navbar{
   background-color: #FFFFFF;
-	border-bottom: 2px;
-	border-bottom-color: #666666;
-	border-bottom-style: solid;
+  padding-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .navbar-brand{
 	padding-top: 50px;
-	margin-bottom: 60px;
+	margin-bottom: 50px;
 }
 
 .nav{

@@ -14,7 +14,6 @@
   </head>
   <body>
     <header>
-
       <nav class="navbar navbar-default navbar-static-top">
         <div class="container">
           <div class="navbar-header">
@@ -29,24 +28,38 @@
               <p class="logoText">WALLSTREETWINES</p>
             </a>
           </div>
-          <div class="textNavbar">
-            <p><img src="images/wineIconLeft.png" alt="wine">
-                 The Product of David Smith's and Jamie Dacey's Idea Since 1860
-                <img src="images/wineIconRight.png" alt="wine">
-            </p>
-          </div>
           <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+            <div class="textNavbar">
+              <p>
+                <img src="images/wineIconLeft.png" alt="wine">
+                   The Product of David Smith's and Jamie Dacey's Idea Since 1860
+                <img src="images/wineIconRight.png" alt="wine">
+              </p>
+            </div>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="index.html" id="Home" onmouseover="addMenuDown(this)" onmouseout="hideMenuDown()">Home<br></a></li>
-              <li><a href="products.html" id="Products"onmouseover="addMenuDown(this)" onmouseout="hideMenuDown()">Products<br></a></li>
-              <li><a href="signup.html"id="Signup" onmouseover="addMenuDown(this)" onmouseout="hideMenuDown()">Signup<br></a></li>
-              <li class="active"><a href="about.html" id="About">About<br><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
-              <li><a href="#" id="Shopping Cart" onClick="displayCart()" onmouseover="addMenuDown(this)" onmouseout="hideMenuDown()">Shopping Cart<br></a></li>
+              <li><a href="index.html" onmouseover="addMenuDown(this)" onmouseout="hideMenuDown()">Home<br></a></li>
+              <li><a href="products.html" onmouseover="addMenuDown(this)" onmouseout="hideMenuDown()">Products<br></a></li>
+              <li><a href="signup.html" onmouseover="addMenuDown(this)" onmouseout="hideMenuDown()">Signup<br></a></li>
+              <li class="active"><a href="about.html">About Us<br><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle cart-button" role="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+              		<span class="badge">0</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right cart" aria-labelledby="dropdownMenu1">
+              	  <table cellspacing="10">
+                    <tr>The Cart is Empty</tr>
+              	   </table>
+              	</div>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
+    <div>
+      <img class="img-responsive" src="images/large/large4.jpg" alt="largeImage">
+    </div>
     <div class="container">
       <div class="row">
         <div class="col-sm-8">

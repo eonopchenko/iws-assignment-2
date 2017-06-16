@@ -12,8 +12,14 @@
 }
 
 .nav{
-  padding-top: 35px;
 	text-align: center;
+  font-family: 'Patua One', cursive;
+  font-size: 25px;
+}
+
+.textNavbar{
+  float: right;
+  font-family: 'Poiret One', cursive;
 }
 
 /*Logo*/
@@ -22,6 +28,7 @@
 	font-family: 'Great Vibes', cursive;
 	color: #A88F53;
 	font-size: 60px;
+  text-shadow: 2px 2px 4px #000000;
 	margin-bottom: 15px;
 }
 .logoText{

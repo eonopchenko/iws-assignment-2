@@ -1,11 +1,12 @@
 // Navbar
 
-function addMenuDown(tabName){
-	document.getElementById(tabName.id).innerHTML = tabName.id + '<br><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>';
+function addMenuDown(element){
+	element.innerHTML += '<span class="glyphicon glyphicon-menu-down" id="arrow" aria-hidden="true"></span>';
 }
 
-function hideMenuDown(tabName){
-	document.getElementById(tabName.id).innerHTML = tabName.id;
+function hideMenuDown(){
+	var span = document.getElementById('arrow');
+	span.parentNode.removeChild(span);
 }
 
 // About Page

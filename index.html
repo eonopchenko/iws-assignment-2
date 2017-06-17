@@ -11,8 +11,10 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Homenaje" rel="stylesheet">
     <title>Home</title>
   </head>
+  <body onLoad="initPopular();initDeal();">
   <body class="background" onLoad="initPopular();initDeal();initHome();">
     <!-- <nav class="navbar navbar-default">
       <div class="container-fluid">
@@ -96,28 +98,33 @@
     <div>
       <img class="img-responsive" src="images/large/large1.jpg" alt="largeImage">
     </div>
-	<div class="container well">
-     <h2>Welcome to Wall street wines</h2>
-     <p>Our shop opened in June 1860 and provie huge assortiments of populiar and premiums wines. Within our store, you will find a superb selection of wines, an expertly selected range that we are very proud of. We like to think of them as our Family of Wines. On our website you’ll find this same collection available for delivery or for you to collect instore.</p>
+	  <div class="container">
+      <p class="heading">Welcome to Wall Street Wines.</p>
+      <p id="textHeading">Do You Love Wine as Much as We Do?</p>
+      <hr>
+      <p class="paragraph">Within our store, you will find a superb selection of wines, an expertly selected range that we are very proud of.
+         We like to think of them as our Family of Wines. On our website you’ll find this same collection available for delivery or for you to collect instore.</p>
     </div>
-	<div class="container">
-		<div class="well">
-			<h3>Featured Wines</h3>
-		</div>
-		<div id="featured-wines">
-			<div class="popular"></div>
-			<br>
-			<div class="s"></div>
-		</div>
-		<div class="well">
-			<h3>The wines of the day</h3>
-		</div>
-		<div class="dealM">
-			<div class="deal"></div>
-		</div>
-	</div>
+    <div class="container">
+      <p class="heading">Featured Wines.</p>
+      <div id="featured-wines">
+        <div class="popular">
+	      </div>
+        <br>
+	      <div class="s"></div>
+	    </div>
+	    <p class="heading">The Wines of The Day.</p>
+	   <div class="dealM">
+	   <div class="deal">
+						</div>
+	  </div>
+	  </div>
+    <div class="container">
+      <hr>
+    </div>
     <footer>
       <p class="logoFooter">WALLSTREETWINES</p>
+      <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 211 George St, Dunedin, NZ</p>
     </footer>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.js"></script>

@@ -6,6 +6,7 @@ $(document).ready(function()
 		removeFromCart($(this).attr("name"));
 		e.stopPropagation();
 	});
+	refreshCartButton()
 	if(!isCartEmpty())
 	{
 		getCart();
@@ -24,7 +25,7 @@ function getCart()
 			{
 				if(cart[i] != null &&  wine['id'] == cart[i])
 				{
-					$(".cart table").append("<tr><td><img src='images/wines/" + wine['id'] + ".jpg' height='80px' width='32px'></img></td><td><h5>" + wine['name'] + "</h5></td><td><h4> $" + wine['price'] + "</h4></td><td><i class='fa fa-check cart-icon' aria-hidden='true' name='"+ wine['id'] +"'></i></td></tr>");
+					$(".cart table").append("<tr><td><img src='images/wines/" + wine['id'] + ".jpg' height='80px' width='32px'></img></td><td><h5>" + wine['name'] + "</h5></td><td><h4> $" + wine['price'] + "</h4></td><td><i class='fa fa-check cart-icon' aria-hidden='true' name='"+ wine['id'] +"'></i></td><td><button class='btn btn-danger' type='button' onClick='removeFromCart(" + wine['id'] + ")'>Remove</button></td></tr>");
 					total = total + parseFloat(wine['price']);
 				}
 			}
@@ -106,6 +107,7 @@ function removeFromCart(wine)
 	}
 	createCookie("cart", newCart, 1);
 	refreshCartButton();
+	getCart();
 }
 
 function trimChar(string, charToRemove) {

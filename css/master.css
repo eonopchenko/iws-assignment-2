@@ -40,15 +40,17 @@
 
 footer{
   background-color: #251E15;
-  height: 100px;
+  height: 130px;
   border-top: 2px;
   border-top-color: #666666;
   border-top-style: solid;
   margin-top: 35px;
+  text-align: center;
+  font-family: 'Playfair Display SC', serif;
+  color: #A88F53;
 }
 
 .logoFooter{
-  text-align: center;
 	font-family: 'Playfair Display SC', serif;
 	color: #A88F53;
 	font-size: 30px;
@@ -58,14 +60,51 @@ footer{
 /*About page*/
 
 .heading{
-	color: #666666;
+  font-family: 'Homenaje', sans-serif;
+  font-size: 50px;
+	color: #FFCC33;
+  margin-top: 30px;
+}
+
+#textOpened{
+  font-family: 'Homenaje', sans-serif;
+  font-size: 50px;
+  color: #646361;
 }
 
 .paragraph{
-	color: #808080;
+  font-family: 'Homenaje', sans-serif;
+  font-size: 20px;
+	color: #939393;
 	text-align: justify;
+}
+
+#quote{
+  font-family: 'Homenaje', sans-serif;
+  font-size: 35px;
+  color: #FFCC33;
+  text-align: justify;
+}
+
+#author{
+  font-family: 'Homenaje', sans-serif;
+  font-size: 35px;
+  color: #646361;
 }
 
 hr {
 	border-width: 2px;
+  border-color: #646361;
+}
+
+/*Signup page*/
+
+#grapevine{
+  margin-top: 50px;
+}
+
+.control-label{
+  font-family: 'Homenaje', sans-serif;
+  font-size: 20px;
+  color: #FFCC33;
 }

@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Homenaje" rel="stylesheet">
     <title>Signup</title>
   </head>
   <body>
@@ -61,60 +62,57 @@
       <img class="img-responsive" src="images/large/large3.jpg" alt="largeImage">
     </div>
     <div class="container">
-      <hr>
-      <h3 class="heading" align="center">Membership Signup</h3>
-      <hr>
+      <p class="heading">Membership Signup.</p>
     </div>
     <div class="container">
       <div class="row">
         <div class="col-md-6">
+          <hr>
           <div class="container" id="membership">
             <form>
               <div class="form-group" id="groupName">
-                <label class="control-label" for="InputName">Your Name</label>
+                <label class="control-label" for="InputName">Your Name.</label>
                 <div class="row">
                   <div class="col-md-4">
-                    <input type="text" class="form-control" id="InputName" placeholder="Name (5 letters at least)" aria-describedby="errorName">
-                    <span id="errorName" class="help-block"></span>
+                    <input type="text" class="form-control paragraph" id="InputName" placeholder="Name (5 letters at least)" aria-describedby="errorName">
+                    <span id="errorName" class="help-block paragraph"></span>
                   </div>
                 </div>
               </div>
               <div class="form-group" id="groupSurname">
-                <label class="control-label" for="InputSurname">Your Surname</label>
+                <label class="control-label" for="InputSurname">Your Surname.</label>
                 <div class="row">
                   <div class="col-md-4">
-                    <input type="text" class="form-control" id="InputSurname" placeholder="Surname (8 letters at least)" aria-describedby="errorSurname">
-                    <span id="errorSurname" class="help-block"></span>
+                    <input type="text" class="form-control paragraph" id="InputSurname" placeholder="Surname (8 letters at least)" aria-describedby="errorSurname">
+                    <span id="errorSurname" class="help-block paragraph"></span>
                   </div>
                 </div>
               </div>
               <div class="form-group" id="groupEmail">
-                <label class="control-label" for="InputEmail">Your Email</label>
+                <label class="control-label" for="InputEmail">Your Email.</label>
                 <div class="row">
                   <div class="col-md-4">
-                    <input type="email" class="form-control" id="InputEmail" placeholder="Email" aria-describedby="errorEmail">
-                    <span id="errorEmail" class="help-block"></span>
+                    <input type="email" class="form-control paragraph" id="InputEmail" placeholder="Email" aria-describedby="errorEmail">
+                    <span id="errorEmail" class="help-block paragraph"></span>
                   </div>
                 </div>
               </div>
               <div class="form-group">
-                <label class="control-label" for="InputBirth">Date Of Birth</label>
+                <label class="control-label" for="InputBirth">Date Of Birth.</label>
                 <div class="row">
                   <div class="col-md-4">
-                    <input type="date" class="form-control" id="InputBirth">
+                    <input type="date" class="form-control paragraph" id="InputBirth">
                   </div>
                 </div>
               </div>
               <div class="form-group">
-                <label class="control-label">Gender</label><br>
-                <!-- <div class="row col-md-pull-1"> -->
-                  <label class="radio-inline"><input type="radio" name="gender" checked>Male</label>
-                  <label class="radio-inline"><input type="radio" name="gender">Female</label>
-                  <label class="radio-inline"><input type="radio" name="gender">Other</label>
-                <!-- </div> -->
+                <label class="control-label">Gender.</label><br>
+                  <label class="radio-inline paragraph"><input type="radio" name="gender" checked>Male</label>
+                  <label class="radio-inline paragraph"><input type="radio" name="gender">Female</label>
+                  <label class="radio-inline paragraph"><input type="radio" name="gender">Other</label>
               </div>
               <div id="groupCheckbox">
-                <div class="checkbox">
+                <div class="checkbox paragraph">
                   <label>
                     <input type="checkbox" id="CheckboxAccept" aria-describedby="errorCheckboxAccept"> I accept the Terms of Service
                     <span id="errorCheckboxAccept" class="help-block"></span>
@@ -122,18 +120,27 @@
                 </div>
               </div>
             </form>
-            <button type="submit" class="btn btn-default" onclick="onClickSubmit()">Submit</button>
+            <button type="submit" class="btn btn-default paragraph" onclick="onClickSubmit()">Submit</button>
             <div id="submitSuccess" role="alert"></div>
           </div>
         </div>
         <div class="col-md-6">
-          <img class="img-responsive" src="images/grapevine.jpg" alt="">
+          <hr>
+          <img class="img-responsive" src="images/grapevine.jpg" alt="grapevine" id="grapevine">
         </div>
       </div>
-      <hr>
+      <div class="row">
+        <div class="col-md-6">
+          <hr>
+        </div>
+        <div class="col-md-6">
+          <hr>
+        </div>
+      </div>
     </div>
     <footer>
       <p class="logoFooter">WALLSTREETWINES</p>
+      <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 211 George St, Dunedin, NZ</p>
     </footer>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.js"></script>

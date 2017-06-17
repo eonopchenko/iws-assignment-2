@@ -76,7 +76,7 @@ function onClickSubmit() {
   }
   if (document.getElementById("errorName").innerHTML == "" && document.getElementById("errorSurname").innerHTML == "" &&
       document.getElementById("errorEmail").innerHTML == "" && document.getElementById("errorCheckboxAccept").innerHTML == "") {
-    document.getElementById("submitSuccess").className = "alert alert-success";
+    document.getElementById("submitSuccess").className = "alert alert-success paragraph";
     document.getElementById("submitSuccess").innerHTML = "Thank you! Your form was successfully submitted.";
   }
 }

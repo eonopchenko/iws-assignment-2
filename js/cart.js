@@ -72,11 +72,26 @@ function addToCart(wine)
 		var cart = [];
 		cart.push(wine);
 		createCookie("cart", cart, 1);
-	} else
+	}
+	else
 	{
 		var cart = getCartElements();
-		cart.push(wine);
-		createCookie("cart", cart, 1);
+		
+		var exist = false;
+		cart.forEach(function(c)
+		{
+			if(wine == c)
+			{
+				exist = true;
+				return;
+			}
+		})
+		
+		if(!exist)
+		{
+			cart.push(wine);
+			createCookie("cart", cart, 1);
+		}
 	}
 	getCart();
 }

@@ -38,7 +38,7 @@ function generateProductDiv(wine)
 {
 	var cat = wine['category'];
 	cat = cat.replace(/ /g, '_');
-	return "<div class='lightbox infobox " + cat + "'><img src='images/wines/" + wine['id'] + ".jpg'></img><h5>" + wine['name'] + "</h5><center><h4>$" + wine['price'] + "</h4></center><button type='button' class='btn btn-default' aria-haspopup='true' name='" + wine['id'] + "' aria-expanded='false'>Add to cart <span class='glyphicon glyphicon-shopping-cart'></span></button><div class='lightbox-more'><div class='col-sm-14 text-center'><img class='img-responsive text-center center-block' src='images/wines/" + wine['id'] + ".jpg' /></div><br />			<div class='text-center'> <h2>" + wine['name'] + "</h2><p>Description: " + wine['desc'] + "</p><p>Category: " + wine['category'] + "</p><h4>Price: $" + wine['price'] + "</h4></div><button style='position:absolute;bottom:10px;right:10px;' class='btn btn-danger' type='button' onClick='addToCart(" + wine['id'] + ")'>Add to cart</button></div></div>";
+	return "<div class='lightbox infobox " + cat + "'><img src='images/wines/" + wine['id'] + ".jpg'></img><h5>" + wine['name'] + "</h5><center><h4>$" + wine['price'] + "</h4></center><button type='button' class='btn btn-default' aria-haspopup='true' name='" + wine['id'] + "' aria-expanded='false'>Add to cart <span class='glyphicon glyphicon-shopping-cart'></span></button><div class='lightbox-more'><div class='col-sm-14 text-center'><img class='img-responsive text-center center-block' src='images/wines/" + wine['id'] + ".jpg' /></div><br />			<div class='text-center'> <h2>" + wine['name'] + "</h2><p>Description: " + wine['desc'] + "</p><p>Category: " + wine['category'] + "</p><h4>Price: $" + wine['price'] + "</h4></div><button style='position:absolute;bottom:10px;right:10px;' class='btn btn-danger' type='button'>Add to cart</button></div></div>";
 }
 
 function getwine(id)
@@ -64,28 +64,48 @@ function goTop(elemt)
 
 function initDeal()
 {
-
-$(".deal")[0].innerHTML = "";
-$.getJSON( "../catalog.json", function( data ) {
-	$.each( data.deal, function(i, wine)
-	{
-		//$(".deal")[0].innerHTML += "<div class='lightbox'><img src='images/wines/" + wine['id'] + ".jpg'></img></div>";
-		var wineObj = data.wines[wine['id']];
-		$(".deal")[0].innerHTML += generateProductDiv(wineObj);
+	$.getJSON( "../catalog.json", function( data ) {
+	var items = [];
+	$.each( data.deal, function( i, wine ) {
+		var w = data.wines[wine['id']];
+		var cat = w['category'];
+		cat = cat.replace(/ /g, '_');
+		items.push(generateProductDiv(w));
+		var current = "<li name='" + cat + "'>" + w['category'] + "</li>";
 	});
-});
+	$(".deal")[0].innerHTML = "";
+	for(var i=0; i<items.length; i++)
+	{
+		$(".deal").get(0).innerHTML += items[i];
+	}
+	});
 }
 
 function initPopular()
 {
-	$(".popular")[0].innerHTML = "";
 	$.getJSON( "../catalog.json", function( data ) {
-		$.each( data.popular, function(i, wine)
-		{
-			var wineObj = data.wines[wine['id']];
-			//$(".popular")[0].innerHTML += "<div class='lightbox'><img src='images/wines/" + wine['id'] + ".jpg'></img></div>";
-			$(".popular")[0].innerHTML += generateProductDiv(wineObj);
-		});
+	var items = [];
+	$.each( data.popular, function( i, wine ) {
+		var w = data.wines[wine['id']];
+		var cat = w['category'];
+		cat = cat.replace(/ /g, '_');
+		items.push(generateProductDiv(w));
+		var current = "<li name='" + cat + "'>" + w['category'] + "</li>";
+	});
+	$(".popular")[0].innerHTML = "";
+	for(var i=0; i<items.length; i++)
+	{
+		$(".popular").get(0).innerHTML += items[i];
+	}
+	});
+}
+
+function initHome()
+{
+	$(document).on("click", ".infobox button", function(e)
+	{
+		addToCart($(this).attr("name"));
+		e.stopPropagation();
 	});
 }
 

@@ -12,12 +12,12 @@ $(document).ready(function()
 	}
 });
 
-var total = 0;
 function getCart()
 {
+	var total = 0;
 	var cart = getCartElements();
 	$(".cart table tr").remove();
-	$.getJSON( "./catalog.json", function( data ) {
+	$.getJSON( "../catalog.json", function( data ) {
 		$(data.wines).each(function(o, wine)
 		{
 			for(var i=0;i<cart.length;i++)
@@ -29,9 +29,10 @@ function getCart()
 				}
 			}
 		});
+		$(".cart table")[0].innerHTML += "<tr><td></td><td>Subtotal $" + total + "</td></tr>";
+		refreshCartButton();
 	});
-	$(".cart table")[0].innerHTML += "<tr><td></td><td>Subtotal $" + total + "</td></tr>";
-	refreshCartButton();
+
 	return cart;
 }
 

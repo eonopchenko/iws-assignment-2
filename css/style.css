@@ -402,8 +402,8 @@ table
 /* Products page lightbox image*/
 .lightbox-more div img
 {
-	width: 200px;
-	height:574px;
+	width: auto;
+	height:auto;
 }
 
 .lightbox-more:hover

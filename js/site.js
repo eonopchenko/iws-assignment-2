@@ -57,13 +57,14 @@ function initDeal()
 	$.getJSON( "../catalog.json",
 		function( data ) {
 			var items = [];
-			$.each( data.deal,
+			$.each( data.wines,
 				function( i, wine ) {
-					var w = data.wines[ wine[ 'id' ] ];
-					var cat = w[ 'category' ];
-					cat = cat.replace( / /g, '_' );
-					items.push( generateProductDiv( w ) );
-					var current = "<li name='" + cat + "'>" + w[ 'category' ] + "</li>";
+					if( wine[ 'onsale' ] == "yes") {
+						var cat = wine[ 'category' ];
+						cat = cat.replace( / /g, '_' );
+						items.push( generateProductDiv( wine ) );
+						var current = "<li name='" + cat + "'>" + wine[ 'category' ] + "</li>";
+					}
 				}
 			);
 			$( ".deal" )[ 0 ].innerHTML = "";
@@ -80,17 +81,19 @@ function initDeal()
 function initPopular() {
 	$.getJSON( "../catalog.json", function( data ) {
 		var items = [];
-		$.each( data.popular,
-			function( i, wine ) {
-				var w = data.wines[wine[ 'id' ]];
-				var cat = w[ 'category' ];
-				cat = cat.replace( / /g, '_' );
-				items.push( generateProductDiv( w ) );
-				var current = "<li name='" + cat + "'>" + w[ 'category' ] + "</li>";
+
+		$.each( data.wines,
+		 	function( i, wine ) {
+				if( wine[ 'popularity' ] == "high") {
+					var cat = wine[ 'category' ];
+					cat = cat.replace( / /g, '_' );
+					items.push( generateProductDiv( wine ) );
+					var current = "<li name='" + cat + "'>" + wine[ 'category' ] + "</li>";
+				}
 			}
 		);
 		$( ".popular" )[ 0 ].innerHTML = "";
-		for( var i = 0; i<items.length; i++ ) {
+		for( var i = 0; i < items.length; i++ ) {
 			$( ".popular" ).get( 0 ).innerHTML += items[ i ];
 		}
 	});

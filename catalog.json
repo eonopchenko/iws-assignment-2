@@ -15,20 +15,6 @@
 	{"id":"13", 	"name":"SHERWOOD ESTATE RIESLING", 					   "category":"white",					"desc":"Sherwood Estate's Waipara Riesling is seriously impressive. This is a lush, exotic style bursting with layers of fresh limes",		                  "popularity":"low",		"onsale":"yes",		"price":"17.99"},
 	{"id":"14", 	"name":"SACRED HILL HALO CHARDONNAY",				   "category":"chardonnay",				"desc":"A very classy, well priced example of robust modern Chardonnay from one of the best winemaking teams in the business.",							      "popularity":"low",		"onsale":"no",		"price":"21.99"},
 	{"id":"15", 	"name":"MUD HOUSE CHARDONNAY", 				           "category":"chardonnay",				"desc":"As always the Mud House Chardonnay is right on the money. A delightful lightly oaked style. Crisp, juicy fruit characters and fine acidity.",		  "popularity":"low",		"onsale":"no",		"price":"16.99"}
- 												
-],
-"popular":[
-	{"id" : "1"},
-	{"id" : "6"},
-	{"id" : "8"},
-	{"id" : "11"},
-	{"id" : "14"}
-],
-"deal":[
-	{"id" : "5"},
-	{"id" : "7"},
-	{"id" : "8"},
-	{"id" : "10"},
-	{"id" : "12"}
+
 ]
 }

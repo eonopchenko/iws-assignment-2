@@ -2,7 +2,7 @@
  * Product page initialization
  */
 function init() {
-	$.getJSON( "../catalog.json",
+	$.getJSON( "catalog.json",
 		function( data ) {
 			var items = [];
 			var categories = [];
@@ -54,7 +54,7 @@ function generateProductDiv( wine ) {
  */
 function initDeal()
 {
-	$.getJSON( "../catalog.json",
+	$.getJSON( "catalog.json",
 		function( data ) {
 			var items = [];
 			$.each( data.wines,
@@ -79,7 +79,7 @@ function initDeal()
  * Popular products block initialization
  */
 function initPopular() {
-	$.getJSON( "../catalog.json", function( data ) {
+	$.getJSON( "catalog.json", function( data ) {
 		var items = [];
 
 		$.each( data.wines,

@@ -26,7 +26,7 @@ function getCart() {
 	var total = 0;
 	var cart = getCartElements();
 	$( ".cart table tr" ).remove();
-	$.getJSON( "../catalog.json",
+	$.getJSON( "catalog.json",
 		function( data ) {
 			$( data.wines ).each(
 				function( o, wine ) {
